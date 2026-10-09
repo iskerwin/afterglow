@@ -3,7 +3,7 @@ import SwiftData
 import PhotosUI
 
 struct ObservationEditor: View {
-    var observation: Observation?
+    var observation: SkyObservation?
     var defaultKind: SkyEventKind
 
     @Environment(\.dismiss) private var dismiss
@@ -122,7 +122,7 @@ struct ObservationEditor: View {
             o.date = date; o.kindRaw = kind.rawValue; o.rating = rating; o.note = note; o.photo = photo
             o.predictedScore = predicted
         } else {
-            context.insert(Observation(date: date, kind: kind, placeName: places.selected?.name ?? "",
+            context.insert(SkyObservation(date: date, kind: kind, placeName: places.selected?.name ?? "",
                                        rating: rating, note: note, predictedScore: predicted, photo: photo))
         }
         try? context.save()

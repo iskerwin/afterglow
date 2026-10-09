@@ -15,7 +15,7 @@ struct AfterglowApp: App {
                 .environment(places)
                 .preferredColorScheme(.dark)
         }
-        .modelContainer(for: [SavedPlace.self, PredictionRecord.self, Observation.self])
+        .modelContainer(for: [SavedPlace.self, PredictionRecord.self, SkyObservation.self])
     }
 }
 

@@ -48,7 +48,7 @@ final class PredictionRecord {
 
 /// 用户的实拍打卡
 @Model
-final class Observation {
+final class SkyObservation {
     var date: Date
     var kindRaw: String
     var placeName: String

@@ -7,11 +7,11 @@ struct HistoryView: View {
     @Environment(PlaceSelection.self) private var places
     @Environment(\.modelContext) private var context
     @Query(sort: \PredictionRecord.eventDate, order: .reverse) private var records: [PredictionRecord]
-    @Query(sort: \Observation.date, order: .reverse) private var observations: [Observation]
+    @Query(sort: \SkyObservation.date, order: .reverse) private var observations: [SkyObservation]
 
     @State private var kind: SkyEventKind = .sunset
     @State private var showEditor = false
-    @State private var editing: Observation?
+    @State private var editing: SkyObservation?
 
     private var placeKey: String? { places.selected?.coordinate.key }
 
@@ -199,7 +199,7 @@ struct HistoryView: View {
 }
 
 struct ObservationRow: View {
-    var o: Observation
+    var o: SkyObservation
     var tz: TimeZone
 
     var body: some View {
