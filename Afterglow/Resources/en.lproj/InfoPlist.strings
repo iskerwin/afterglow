@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "Afterglow";
+"CFBundleName" = "Afterglow";
+"NSLocationWhenInUseUsageDescription" = "Afterglow uses your location to forecast local sunrise and sunset glow.";

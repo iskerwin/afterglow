@@ -29,7 +29,9 @@ targets:
     info:
       path: Afterglow/Resources/Info.plist
       properties:
-        CFBundleDisplayName: 霞光
+        CFBundleDisplayName: Afterglow
+        CFBundleName: Afterglow
+        CFBundleDevelopmentRegion: en
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSRequiresIPhoneOS: true
